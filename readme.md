@@ -36,4 +36,7 @@ python manage.py migrate
 
 # Run webserver.
 python manage.py runserver
+
+# Create infrasture needed to build an app.
+python manage.py startapp learning_logs
 ~~~~
