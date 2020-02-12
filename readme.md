@@ -40,12 +40,18 @@ django-admin.py startproject learning_log .
 
 # Create custom Database.
 python manage.py migrate
+~~~~
 
+### Django CLI commands
+~~~~
 # Run webserver.
 python manage.py runserver
 
 # Create infrasture needed to build an app.
 python manage.py startapp learning_logs
+
+# Access Django shell
+python manage.py shell
 ~~~~
 
 ### Django modifing DB data
