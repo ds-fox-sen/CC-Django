@@ -40,6 +40,10 @@ INSTALLED_APPS = [
 
     # My apps
     'learning_logs',
+    'users',
+
+    # Third party APP_DIRS
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -85,7 +89,7 @@ DATABASES = {
 
 
 # Password validation
-# https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
+    # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -121,3 +125,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# My settings
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/users/login/'
+
+# Settings for django-bootstrap3
+BOOTSTRAP3 = {
+    'include_jquery': True,
+    }
