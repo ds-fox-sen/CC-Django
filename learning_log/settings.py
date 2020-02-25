@@ -25,7 +25,8 @@ SECRET_KEY = 'j@01*0wy1%#9%zk6)yu(y_shjy+a-k_r87&y+5_j!$**599n1m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sleepy-chamber-55616.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
+                 'sleepy-chamber-55616.herokuapp.com']
 
 DEBUG = False
 
