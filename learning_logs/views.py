@@ -4,12 +4,20 @@ from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 
+from django.views.defaults import page_not_found as default_page_not_found
+from django.views.defaults import server_error as default_server_error
 
 from .models import Topic, Entry
 from .forms import TopicForm, EntryForm
 
 
 # Create your views here.
+def page_not_found(request, template_name='learning_logs/404.html'):
+    return default_page_not_found(request, template_name=template_name)
+
+
+def server_error(request, template_name='learning_logs/500.html'):
+    return default_server_error(request, template_name=template_name)
 
 
 def index(request):
